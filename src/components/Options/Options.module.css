@@ -1,0 +1,31 @@
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.btn {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 8px;
+  text-align: center;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.7);
+  border: solid 1px rgb(44, 44, 44);
+  border-radius: 5px;
+}
+
+.btn:hover {
+  color: rgb(178, 177, 177);
+  background-color: rgba(100, 99, 99, 0.7);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
