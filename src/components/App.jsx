@@ -36,6 +36,7 @@ const App = () => {
       <Options
         handleClickChoice={updateFeedback}
         handleClickReset={deleteFeedback}
+        totalFeedback={totalFeedback}
       />
       {totalFeedback > 0 ? (
         <Feedback

@@ -1,6 +1,10 @@
 import css from "./Options.module.css";
 
-export const Options = ({ handleClickChoice, handleClickReset }) => {
+export const Options = ({
+  handleClickChoice,
+  handleClickReset,
+  totalFeedback,
+}) => {
   return (
     <div className={css.div}>
       <button
@@ -24,9 +28,11 @@ export const Options = ({ handleClickChoice, handleClickReset }) => {
       >
         Bad
       </button>
-      <button className={css.btn} onClick={handleClickReset} type="button">
-        Reset
-      </button>
+      {totalFeedback > 0 && (
+        <button className={css.btn} onClick={handleClickReset} type="button">
+          Reset
+        </button>
+      )}
     </div>
   );
 };
